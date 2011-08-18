@@ -101,7 +101,7 @@ public class TestFA {
                         System.out.println("converting file: " + element);
                         String s = ExcelFeatureAnalysis.analyse(element); 
                        // System.out.println(s);
-                        FileWriter fileWriter = new FileWriter(element.getAbsolutePath() + ".xml");
+                        FileWriter fileWriter = new FileWriter(element.getAbsolutePath() + "_feature.xml");
                         fileWriter.write(s);
                         fileWriter.close();
 
