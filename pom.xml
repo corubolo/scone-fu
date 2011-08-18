@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>eu.shaman.liverpool</groupId>
+  <artifactId>exceltransform</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Excel transformation module</name>
+  <description>This package will transform Excel spreadsheets to XML using the Apache POI library, to ODF using ODFSimple library</description>
+  <inceptionYear>2011</inceptionYear>
+  <contributors><contributor><name>Fabio Corubolo</name><email>corubolo@gmail.com</email></contributor></contributors>
+  <organization>
+  	<name>SHAMAN project - University of Liverpool</name>
+  </organization>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>3.8-beta3</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-examples</artifactId>
+      <version>3.8-beta3</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>3.8-beta3</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml-schemas</artifactId>
+      <version>3.8-beta3</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-scratchpad</artifactId>
+      <version>3.8-beta3</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+    	<groupId>org.odftoolkit</groupId>
+    	<artifactId>simple-odf</artifactId>
+    	<version>0.6</version>
+    </dependency>
+    <dependency>
+    	<groupId>jdom</groupId>
+    	<artifactId>jdom</artifactId>
+    	<version>1.1</version>
+    	<type>jar</type>
+    	<scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>
