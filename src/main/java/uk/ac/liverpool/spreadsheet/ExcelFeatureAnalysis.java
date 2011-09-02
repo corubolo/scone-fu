@@ -29,8 +29,10 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.POIXMLProperties;
@@ -303,6 +305,7 @@ public class ExcelFeatureAnalysis {
         boolean UDF = false;
         boolean hasComments = false;
 
+        Set<String> udfs = new HashSet<String>();
         FormulaEvaluator evaluator = ss.getWorkbook().getCreationHelper()
         .createFormulaEvaluator();
 
@@ -411,7 +414,8 @@ public class ExcelFeatureAnalysis {
                                             if (c.getClassName().contains(
                                             "UserDefinedFunction")) {
                                                 UDF = true;
-                                                System.out.println("UDF " + e.getMessage());
+                                                //System.out.println("UDF " + e.getMessage());
+                                                udfs.add(e.getMessage());
                                             }
                                         }
                                         e = e.getCause();
@@ -435,6 +439,8 @@ public class ExcelFeatureAnalysis {
         }
         if (UDF) {
             Element cf = new Element("userDefinedFunctions", sn);
+            for (String sss: udfs)
+                cf.addContent(new Element("userDefinedFunction",sn).setAttribute("functionName",sss));
             s.addContent(cf);
         }
         if (hasComments) {
