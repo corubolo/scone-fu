@@ -30,6 +30,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.poi.hssf.usermodel.HSSFEvaluationWorkbook;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -316,7 +317,7 @@ public class ToXML {
                         && cell.getCellType() == Cell.CELL_TYPE_FORMULA) {
                     attrs += " readOnly=\"readOnly\""; 
                     try {
-                        attrs += " cellFormula=\"" + cell.getCellFormula()
+                        attrs += " cellFormula=\"" + StringEscapeUtils.escapeXml(cell.getCellFormula())
                         + "\"";
                     } catch (Exception x) {
                         attrs += " cellFormula=\"FORMULA ERROR\"";
@@ -331,7 +332,7 @@ public class ToXML {
                         System.out.println(refs);
                         cleanup(refs);
                         for (String s:refs) {
-                            formula.append(cellToFormulaConverted.get(s));
+                            formula.append( StringEscapeUtils.escapeXml(cellToFormulaConverted.get(s)));
                             formula .append(" || ");
                         }
                     }
@@ -355,10 +356,10 @@ public class ToXML {
                 }
                 // }
                 attrs += " value_type=\"" + valueType + "\"";
-                attrs += " value=\"" + content + "\"";
+                attrs += " value=\"" +StringEscapeUtils.escapeXml( content )+ "\"";
                 out.format("    <TableCell  %s>%s</TableCell>%n", // class=%s
                         // styleName(style),
-                        attrs, content);
+                        attrs,StringEscapeUtils.escapeXml( content));
             }
             out.format(" </TableCells> </TableRow>%n%n");
         }

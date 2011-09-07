@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<?xml-stylesheet type="text/xsl" href="spreadsheet.xsl"?>
+<spreadsheets><Table name="Sheet2">
+<ColumnHeaders>
+    <ColumnHeader>RowID\ColID</ColumnHeader>
+    <ColumnHeader>A</ColumnHeader>
+    <ColumnHeader>B</ColumnHeader>
+    <ColumnHeader>C</ColumnHeader>
+    <ColumnHeader>D</ColumnHeader>
+</ColumnHeaders>
+  <TableRow>
+    <RowHeader>1</RowHeader>
+  <TableCells>
+    <TableCell   cellID=".A1" formula="[.B1]=2*[.A1] || [.B2]=[.A1]*[.B1]" value_type="float" value="4">4</TableCell>
+    <TableCell   cellID=".B1" readOnly="readOnly" cellFormula="2*A1" value_type="float" value="8">8</TableCell>
+    <TableCell   cellID=".C1" value_type="float" value="0">0</TableCell>
+    <TableCell   cellID=".D1" value_type="float" value="0">0</TableCell>
+ </TableCells> </TableRow>
+
+  <TableRow>
+    <RowHeader>2</RowHeader>
+  <TableCells>
+    <TableCell   cellID=".A2" value_type="float" value="0">0</TableCell>
+    <TableCell   cellID=".B2" readOnly="readOnly" cellFormula="A1*B1" value_type="float" value="32">32</TableCell>
+    <TableCell   cellID=".C2" value_type="float" value="0">0</TableCell>
+    <TableCell   cellID=".D2" value_type="float" value="0">0</TableCell>
+ </TableCells> </TableRow>
+
+</Table>
+
+</spreadsheets>

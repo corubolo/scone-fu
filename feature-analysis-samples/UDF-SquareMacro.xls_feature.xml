@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<featureanalysis xmlns="http://shaman.disi.unitn.it/FeatureAnalysis">
+  <processing_date>2011-09-07T15:24:29.248+0200</processing_date>
+  <processingSoftware name="uk.ac.liverpool.spreadsheet.ExcelFeatureAnalysis" version="0.3" />
+  <object filename="UDF-SquareMacro.xls" lastModified="2011-09-07T10:38:20.000+0200" mimeType="application/vnd.ms-excel">
+    <ss:spreadsheets xmlns:ss="http://shaman.disi.unitn.it/Spreadsheet" numberOfSheets="3" OSVersion="131077">
+      <ss:Fonts>
+        <ss:Font Name="Arial" Charset="0" />
+        <ss:Font Name="Arial" Charset="0" />
+        <ss:Font Name="Arial" Charset="0" />
+        <ss:Font Name="Arial" Charset="0" />
+      </ss:Fonts>
+      <ss:NamedCells />
+      <ss:sheet name="Sheet1" firstRow="0" lastRow="1" forceFormulaRecalc="false" footer="true" header="true" firstColumn="0" lastColumn="4">
+        <ss:customisedFormatting />
+        <ss:formulae />
+        <ss:userDefinedFunctions>
+          <ss:userDefinedFunction functionName="square" />
+        </ss:userDefinedFunctions>
+      </ss:sheet>
+      <ss:sheet name="Sheet2" firstRow="0" lastRow="0" forceFormulaRecalc="false" footer="true" header="true" firstColumn="0" lastColumn="0" />
+      <ss:sheet name="Sheet3" firstRow="0" lastRow="0" forceFormulaRecalc="false" footer="true" header="true" firstColumn="0" lastColumn="0" />
+    </ss:spreadsheets>
+  </object>
+</featureanalysis>
+

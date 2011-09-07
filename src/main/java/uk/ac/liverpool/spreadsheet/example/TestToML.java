@@ -91,7 +91,7 @@ public class TestToML {
                         System.out.println("converting file: " + element);
                         ToXML toMl = ToXML.create(new FileInputStream(
                                 element));
-                        toMl.setEvaluateFormulae(true);
+                        toMl.setEvaluateFormulae(false);
                         toMl.convert(element.getAbsolutePath() + ".xml");
 
 

@@ -340,9 +340,9 @@ public class ExcelFeatureAnalysis {
             try {
                 if (hs.getDrawingPatriarch() != null) {
                     if (hs.getDrawingPatriarch().containsChart())
-                        s.setAttribute("charts", "true");
+                        s.addContent(new Element("charts",sn));
                     if (hs.getDrawingPatriarch().countOfAllChildren() > 0)
-                        s.setAttribute("shapes", "true");
+                        s.addContent(new Element("shapes",sn));
                 }
             } catch (Exception x) {
                 x.printStackTrace();
@@ -355,6 +355,7 @@ public class ExcelFeatureAnalysis {
         }
         if (ss instanceof XSSFSheet) {
             xs = (XSSFSheet) ss;
+         
 
         }
         Iterator<Row> rows = ss.rowIterator();
@@ -414,7 +415,7 @@ public class ExcelFeatureAnalysis {
                                             if (c.getClassName().contains(
                                             "UserDefinedFunction")) {
                                                 UDF = true;
-                                                //System.out.println("UDF " + e.getMessage());
+                                                System.out.println("UDF " + e.getMessage());
                                                 udfs.add(e.getMessage());
                                             }
                                         }
