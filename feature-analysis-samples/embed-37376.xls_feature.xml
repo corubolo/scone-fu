@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<featureanalysis xmlns="http://shaman.disi.unitn.it/FeatureAnalysis">
+  <processing_date>2011-09-07T17:57:23.647+0200</processing_date>
+  <processingSoftware name="uk.ac.liverpool.spreadsheet.ExcelFeatureAnalysis" version="0.3" />
+  <object filename="embed-37376.xls" lastModified="2011-09-07T17:57:00.000+0200" mimeType="application/vnd.ms-excel">
+    <ss:spreadsheets xmlns:ss="http://shaman.disi.unitn.it/Spreadsheet" numberOfSheets="1" OSVersion="131333">
+      <ss:Pictures>
+        <ss:Picture mimeType="image/x-emf" />
+        <ss:Picture mimeType="image/x-emf" />
+        <ss:Picture mimeType="image/x-emf" />
+        <ss:Picture mimeType="image/x-emf" />
+        <ss:Picture mimeType="image/x-emf" />
+        <ss:Picture mimeType="image/x-emf" />
+        <ss:Picture mimeType="image/x-emf" />
+        <ss:Picture mimeType="image/x-emf" />
+        <ss:Picture mimeType="image/x-emf" />
+        <ss:Picture mimeType="image/x-emf" />
+      </ss:Pictures>
+      <ss:Fonts>
+        <ss:Font Name="Arial" Charset="0" />
+        <ss:Font Name="Arial" Charset="0" />
+        <ss:Font Name="Arial" Charset="0" />
+        <ss:Font Name="Arial" Charset="0" />
+      </ss:Fonts>
+      <ss:EmbeddedObjects>
+        <ss:EmbeddedObject name="Forms.CheckBox.1" />
+        <ss:EmbeddedObject name="Forms.CheckBox.1" />
+        <ss:EmbeddedObject name="Forms.CheckBox.1" />
+        <ss:EmbeddedObject name="Forms.CheckBox.1" />
+        <ss:EmbeddedObject name="Forms.CheckBox.1" />
+        <ss:EmbeddedObject name="Forms.CheckBox.1" />
+        <ss:EmbeddedObject name="Forms.CheckBox.1" />
+        <ss:EmbeddedObject name="Forms.CheckBox.1" />
+        <ss:EmbeddedObject name="Forms.CheckBox.1" />
+        <ss:EmbeddedObject name="Forms.CheckBox.1" />
+      </ss:EmbeddedObjects>
+      <ss:sheet name="Sheet1" firstRow="0" lastRow="0" forceFormulaRecalc="false" footer="true" header="true" firstColumn="0" lastColumn="0" />
+    </ss:spreadsheets>
+  </object>
+</featureanalysis>
+
